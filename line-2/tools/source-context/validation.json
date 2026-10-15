@@ -1,0 +1,72 @@
+{
+  "local_observations_only": true,
+  "checks": [
+    {
+      "command": [
+        "python3",
+        "-B",
+        "line-2/tools/source-context/test_show.py"
+      ],
+      "expected_exit": 0,
+      "actual_exit": 0,
+      "passed": true,
+      "stdout_bytes": 0,
+      "test_summary": "n) ... ok\ntest_multiline_root_preserves_head_tail_and_reports_omitted_lines (__main__.ContextTests.test_multiline_root_preserves_head_tail_and_reports_omitted_lines) ... ok\ntest_no_follow_and_path_boundary (__main__.ContextTests.test_no_follow_and_path_boundary) ... ok\ntest_null_is_present (__main__.ContextTests.test_null_is_present) ... ok\ntest_output_limit_fails_closed_without_partial_diagnostics (__main__.ContextTests.test_output_limit_fails_closed_without_partial_diagnostics) ... ok\ntest_real_output_overflow_rejects_every_diagnostic_together (__main__.ContextTests.test_real_output_overflow_rejects_every_diagnostic_together) ... ok\ntest_saved_zto_policy_valid_and_offline (__main__.ContextTests.test_saved_zto_policy_valid_and_offline) ... ok\ntest_shared_path_captured_once (__main__.ContextTests.test_shared_path_captured_once) ... ok\ntest_terminal_control_characters_and_ansi_cannot_execute (__main__.ContextTests.test_terminal_control_characters_and_ansi_cannot_execute) ... ok\ntest_unicode_crlf_tabs_and_escaped_key (__main__.ContextTests.test_unicode_crlf_tabs_and_escaped_key) ... ok\n\n----------------------------------------------------------------------\nRan 20 tests in 0.312s\n\nOK\n"
+    },
+    {
+      "command": [
+        "python3",
+        "-B",
+        "line-2/tools/source-locator/test_locate.py"
+      ],
+      "expected_exit": 0,
+      "actual_exit": 0,
+      "passed": true,
+      "stdout_bytes": 0,
+      "test_summary": "i_exits_and_no_follow_boundaries (__main__.SourceTests.test_cli_exits_and_no_follow_boundaries) ... ok\ntest_empty_and_escaped_missing_names (__main__.SourceTests.test_empty_and_escaped_missing_names) ... ok\ntest_escaped_lexemes_are_not_reserialized (__main__.SourceTests.test_escaped_lexemes_are_not_reserialized) ... ok\ntest_input_identity_commits_formatting (__main__.SourceTests.test_input_identity_commits_formatting) ... ok\ntest_malformed_duplicate_nonfinite_and_encoding_refused (__main__.SourceTests.test_malformed_duplicate_nonfinite_and_encoding_refused) ... ok\ntest_many_flat_tokens (__main__.SourceTests.test_many_flat_tokens) ... ok\ntest_missing_field_and_present_null_are_distinct (__main__.SourceTests.test_missing_field_and_present_null_are_distinct) ... ok\ntest_prefix_tail_and_duplicate_locations (__main__.SourceTests.test_prefix_tail_and_duplicate_locations) ... ok\ntest_root_span_and_trailing_whitespace (__main__.SourceTests.test_root_span_and_trailing_whitespace) ... ok\ntest_unicode_crlf_tabs_and_escaped_key (__main__.SourceTests.test_unicode_crlf_tabs_and_escaped_key) ... ok\n\n----------------------------------------------------------------------\nRan 16 tests in 0.138s\n\nOK\n"
+    },
+    {
+      "command": [
+        "python3",
+        "-B",
+        "line-2/tools/source-context/show.py",
+        "line-2/tools/json-contract/report.contract.json",
+        "line-2/tools/rule-locator/report.invalid.json"
+      ],
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "passed": true,
+      "stdout_bytes": 2449,
+      "test_summary": null
+    },
+    {
+      "command": [
+        "python3",
+        "-B",
+        "line-2/tools/source-context/show.py",
+        "line-2/tools/json-contract/report.contract.json",
+        "line-2/tools/rule-locator/report.invalid.json",
+        "--json"
+      ],
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "passed": true,
+      "stdout_bytes": 15442,
+      "test_summary": null
+    },
+    {
+      "command": [
+        "python3",
+        "-B",
+        "line-2/tools/source-context/show.py",
+        "shared/payment-evidence/policy.contract.json",
+        "shared/payment-evidence/example.policy.json"
+      ],
+      "expected_exit": 0,
+      "actual_exit": 0,
+      "passed": true,
+      "stdout_bytes": 362,
+      "test_summary": null
+    }
+  ]
+}

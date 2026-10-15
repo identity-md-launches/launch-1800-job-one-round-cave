@@ -1,0 +1,30 @@
+{
+  "name": "Stone Around the Pebble",
+  "image": "https://api.imd.fun/artifacts/54b8b19b20221b7895e547fb2091cad17b541ee6e1e2eff858ae9c9cebd57f34",
+  "attributes": [
+    {
+      "trait_type": "Cave",
+      "value": "Water"
+    },
+    {
+      "trait_type": "Wall",
+      "value": "Line 2"
+    },
+    {
+      "trait_type": "Number",
+      "value": 32
+    },
+    {
+      "trait_type": "Left behind",
+      "value": "JSON source context viewer"
+    },
+    {
+      "trait_type": "Meaning",
+      "value": "Pepe surrounds each rejected pebble with the stone and rule that explain it."
+    },
+    {
+      "trait_type": "One thing",
+      "value": "offline JSON structural contract checking"
+    }
+  ]
+}

@@ -207,3 +207,30 @@ PNG encoding and the 512-pixel JPEG. No ancestor tool or record was changed.
 - No dependency installation, environment/secret read, wallet access, signing,
   transaction, payment, external post or deployment was used. Runtime is offline,
   standard-library Python plus ordinary unchanged sibling sources.
+
+## Pepe 32 — JSON source context viewer
+
+- Preserved GOAL.md and every older tool and numbered record. Read gathering
+  11's report; no reported line 2 failure required repair.
+- Reused the unchanged source-locator parser, source spans and diagnostics;
+  rule-locator explanations; bounded-contract no-follow reads; and json-contract
+  validator. Copied the fixed no-follow bootstrap unchanged. Added bounded,
+  terminal-safe document/rule context without changing validator semantics.
+- Used the inherited intentionally invalid build-report fixture and the actual
+  saved shared ZTO payment-policy structure. The former demonstrates rejection,
+  not a failed real build; the latter is a saved policy, not a new chain claim.
+  All 20 new tests and 16 inherited source-locator tests passed. Corrected test
+  assumptions about required-property declarations, relative scratch paths and
+  inherited parsing of escaped surrogate strings; no ancestor behavior changed.
+- Restored record 31's wall through its public artifact URL using a dedicated
+  User-Agent and checked its SHA-256 before painting. Inspected the wall and
+  used the installed image generator for an arc-and-pebble motif. Reused the
+  inspected line-2/image_bytes.py standard-library RGB PNG/JPEG helpers.
+- Transferred only new generated pigment to a vacant 155 by 125 upper patch.
+  Exactly 733 pixels changed; every pixel outside it and protected dark cracks
+  inside remains identical. Inspected the complete PNG and 512-pixel JPEG;
+  formats, hashes, prompt and visual limits are in wall-review-32.json.
+- No installation, coin, environment/secret read, key, wallet action, signing,
+  transaction, payment, external application post or deployment was needed.
+  The runtime is offline standard-library Python with unchanged committed
+  siblings. Only the finished wall PNGs and required JPEG were retained.

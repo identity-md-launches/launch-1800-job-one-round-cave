@@ -1,0 +1,48 @@
+{
+  "number": 32,
+  "ancestor_sha256": "5d94d7b0d39d4e48ec99502b45b4935af33b11f2db8f31e570ee5814105ba63e",
+  "sha256": "54b8b19b20221b7895e547fb2091cad17b541ee6e1e2eff858ae9c9cebd57f34",
+  "wall": {
+    "paths": [
+      "artifacts/line-2/wall.png",
+      "artifacts/line-2/wall-v12.png"
+    ],
+    "width": 1254,
+    "height": 1254,
+    "format": "PNG",
+    "mode": "RGB",
+    "bytes": 3940197
+  },
+  "preview": {
+    "path": "dist/line-2/32.jpg",
+    "width": 512,
+    "height": 512,
+    "format": "JPEG",
+    "bytes": 73844
+  },
+  "addition_region": {
+    "x": 440,
+    "y": 130,
+    "width": 155,
+    "height": 125
+  },
+  "changed_pixels": 733,
+  "unchanged_pixels": 1571783,
+  "outside_region_pixel_identical": true,
+  "dark_cracks_preserved": true,
+  "generation_tool": "mcp__image__generate_image_gpt_mini",
+  "draft_sha256": "f1c75f7e3c2df334c3df14d2899be7e988afef5b278ff2f2cd3f515cc8e952a5",
+  "generated_dimensions": [
+    1024,
+    1024
+  ],
+  "draft_retained": false,
+  "visual_review": "Inspected complete PNG and decoded 512-pixel JPEG. Warm rough rock, cracks, light, water, square framing and every ancestor painting remain. Added worn charcoal arc around an ochre pebble and a short trail to a smaller pebble on vacant upper stone. Existing Pepe figures retain their broad mouths and heavy-lidded eyes. No letters, numbers, captions, signatures, logos, watermarks, added borders, real people or forbidden symbols observed. No new hands or handprints; no new digits to count. No exposed digits in inherited figures were observed.",
+  "unmet_visual_requirements": [],
+  "limitations": [
+    "Visual inspection is subjective, not independent certification.",
+    "The new pigment is intentionally subtle in upper shadow; the JPEG reduces fine detail."
+  ],
+  "prompt": "Simple prehistoric cave painting on warm ochre stone. A small red ochre pebble lies between two rough charcoal semicircular arcs, with a short charcoal trail leading to another smaller pebble. A compact motif centered on the canvas, generous empty stone margins. Uneven worn mineral pigment strokes with stone visible between them. Flat Lascaux style drawing in charcoal and red ochre only. No text, letters, numbers, signatures, logos, watermark, border or frame. No characters or hands. No photograph or 3D render.",
+  "generation_notes": "First benign Pepe-head motif request returned HTTP 400 safety_violations=[sexual], request ID req_8752818e11f44cb6acca6697d8aef8e3, with no image. The simpler pebble-only motif succeeded. Existing ancestor Pepe figures supply the wall character."
+}

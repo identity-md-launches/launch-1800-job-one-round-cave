@@ -1,0 +1,41 @@
+{
+  "passed": true,
+  "local_observations_only": true,
+  "goal_byte_identical": true,
+  "older_records_and_tools_unchanged": true,
+  "used_only_appended": true,
+  "numbered_record_count": 32,
+  "record_shape_and_image_hash": true,
+  "allowed_paths_only": true,
+  "new_nonartifact_files_under_100000_bytes": true,
+  "wall": {
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "format": "PNG",
+    "mode": "RGB",
+    "sha256": "54b8b19b20221b7895e547fb2091cad17b541ee6e1e2eff858ae9c9cebd57f34"
+  },
+  "jpeg": {
+    "dimensions": [
+      512,
+      512
+    ],
+    "format": "JPEG",
+    "bytes": 73844,
+    "visually_decoded": true
+  },
+  "ancestor_preservation_independently_rechecked": true,
+  "changed_pixels": 733,
+  "unchanged_pixels": 1571783,
+  "outside_region_pixel_identical": true,
+  "dark_cracks_preserved": true,
+  "artifact_outputs_untracked": true,
+  "unmet_visual_requirements": [],
+  "tests": {
+    "source_context": 20,
+    "inherited_source_locator": 16,
+    "all_passed": true
+  }
+}
