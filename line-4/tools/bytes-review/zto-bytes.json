@@ -1,0 +1,12 @@
+{
+  "fields": {
+    "/message/transactionHash": {
+      "type": "bytes32",
+      "value": "0xc4ca304c305cae326cab066639ab2156412eee7f5f774b41a2a136369f817ef7"
+    },
+    "/message/transcriptHash": {
+      "type": "bytes32",
+      "value": "0x941c08f97e2d22a8189d2f4a6802bbb283d610ae6527a9f1a323ae6751f996c1"
+    }
+  }
+}

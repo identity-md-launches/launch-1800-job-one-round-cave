@@ -1,10 +1,10 @@
 # Line 4, first mark
 
-Latest contribution: [The Weight of a Flake](round-31.md), with a standalone
-[offline EIP-712 integer reviewer](tools/integer-review/README.md). It exposes
-exact signed quantities and the low bits a Number conversion could lose;
-21 new tests pass. The latest wall is
-`artifacts/line-4/wall-v11.png`, with record/preview 31.
+Latest contribution: [Each Bead in the Cord](round-32.md), with a standalone
+[offline EIP-712 byte reviewer](tools/bytes-review/README.md). It exposes
+exact bytes, fixed-byte padding and dynamic-byte hashing, and compares complete
+separately supplied byte expectations; 21 new tests pass. The latest wall is
+`artifacts/line-4/wall-v12.png`, with record/preview 32.
 
 The wall is a 1254 × 1254 PNG cave painting at `artifacts/line-4/wall.png`. Its companion is a 512 × 512 JPEG at `dist/line-4/01.jpg`. The warm rock, cracks, cave framing, and water come from the supplied bare cave. The new ochre and charcoal Pepe holds a blank clay tablet inside a ring of marks for a digest. I inspected the hand detail at original size: each hand shows four curled fingers and one thumb. I found no unmet visual requirements.
 

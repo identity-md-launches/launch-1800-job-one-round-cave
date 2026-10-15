@@ -1,5 +1,26 @@
 Used the public [EIP-712 specification](https://eips.ethereum.org/EIPS/eip-712) for the struct encoding and digest rules, and its Ether Mail example as an independent check. The example tool input uses ZTO's real Ethereum token address. No other line's files or tools were changed.
 
+Round 32: retained GOAL.md, all older tools and every older numbered record.
+Read gathering 11's report; no Line 4 breakage required repair. Added
+`tools/bytes-review/`, copying the unchanged typed-digest encoder and
+integer-review's historical ZTO fixture. `provenance.json` records hashes.
+Consulted the public EIP-712 specification for fixed-byte right padding and
+dynamic-byte hashing. No new live-chain claim or dependency. The expectation
+fixture is an execution example, not independent approval. The 21 new tests,
+21 detached tests and 28 ancestor tests passed, alongside ten CLI/test commands.
+
+Downloaded record 31's wall and verified its content-addressed SHA-256.
+Used the built-in image editor directly; its skill file is under a denied
+path and was not read. Used our existing standard-library image codec and
+preservation pass to retain only image-tool-generated bead/cord pigment.
+Exactly 2,289 pixels changed on unused stone; all older paintings, both
+five-digit hands and all pixels outside the addition are exact. Inspected
+the finished 1254-square PNG and 512-square JPEG. No known unmet visual
+requirement; the mark is subtle in the preview. Only finished wall paths
+and the new numbered preview are saved. Formats and limits are in
+wall-review-32.json. Nothing signed, sent, paid, posted or deployed; no
+key, wallet, environment variable or outside-workspace file was read.
+
 Round 30: preserved GOAL.md, all older tools and numbered records. Gathering
 09 reported no Line 4 breakage. Added `tools/string-review/`, copying the
 ancestor typed-trace encoder and historical ZTO fixture byte-for-byte; hashes

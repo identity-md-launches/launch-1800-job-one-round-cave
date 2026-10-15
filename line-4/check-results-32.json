@@ -1,0 +1,153 @@
+{
+  "offline": true,
+  "checks": [
+    {
+      "command": [
+        "python3",
+        "-B",
+        "line-4/tools/bytes-review/bytes_review.py",
+        "line-4/tools/bytes-review/zto-payment.json",
+        "--bytes-expect",
+        "line-4/tools/bytes-review/zto-bytes.json",
+        "--digest-expect",
+        "0xf33e2506e5c103f98dbfe3feb6d4b87d55f1fad4e423dbaa8462465ff4ab9774"
+      ],
+      "expectedExit": 0,
+      "actualExit": 0,
+      "stdout": "{\n  \"reviewVersion\": 1,\n  \"primaryType\": \"PaymentEvidence\",\n  \"typeEncoding\": \"PaymentEvidence(bytes32 transactionHash,address token,address recipient,uint256 minimumRaw,uint256 confirmations,bool requireFinalized,bytes32 transcriptHash)\",\n  \"domainSeparator\": \"0xb841b9b4b38823bdf4340d649cbad52a49cb75b55ddd1f91b457246dcb4f807d\",\n  \"messageHash\": \"0xac6db73f194d768dad814f953bcc998a7338581d687e8a9107ca85ed94077599\",\n  \"digest\": \"0xf33e2506e5c103f98dbfe3feb6d4b87d55f1fad4e423dbaa8462465ff4ab9774\",\n  \"fields\": [\n    {\n      \"path\": \"/message/transactionHash\",\n      \"type\": \"bytes32\",\n      \"value\": \"0xc4ca304c305cae326cab066639ab2156412eee7f5f774b41a2a136369f817ef7\",\n      \"inputBytes\": 32,\n      \"encoding\": \"right_zero_pad\",\n      \"paddingBytes\": 0,\n      \"word\": \"0xc4ca304c305cae326cab066639ab2156412eee7f5f774b41a2a136369f817ef7\",\n      \"zeroByteOffsets\": [],\n      \"empty\": false\n    },\n    {\n      \"path\": \"/message/transcriptHash\",\n      \"type\": \"bytes32\",\n      \"value\": \"0x941c08f97e2d22a8189d2f4a6802bbb283d610ae6527a9f1a323ae6751f996c1\",\n      \"inputBytes\": 32,\n      \"encoding\": \"right_zero_pad\",\n      \"paddingBytes\": 0,\n      \"word\": \"0x941c08f97e2d22a8189d2f4a6802bbb283d610ae6527a9f1a323ae6751f996c1\",\n      \"zeroByteOffsets\": [],\n      \"empty\": false\n    }\n  ],\n  \"byteFieldCount\": 2,\n  \"expectationsProvided\": true,\n  \"digestExpectationProvided\": true,\n  \"interpretation\": \"Exact bytes and declared types are compared, never padded, trimmed or repaired in the input. Matching byte fields does not pin non-byte values or the whole schema. A matching digest is not signing approval, ownership or contract support.\",\n  \"unpinnedPaths\": [],\n  \"absentPaths\": [],\n  \"checks\": [\n    {\n      \"path\": \"/message/transactionHash\",\n      \"typeMatches\": true,\n      \"bytesMatch\": true,\n      \"expected\": {\n        \"type\": \"bytes32\",\n        \"value\": \"0xc4ca304c305cae326cab066639ab2156412eee7f5f774b41a2a136369f817ef7\"\n      },\n      \"actual\": {\n        \"type\": \"bytes32\",\n        \"value\": \"0xc4ca304c305cae326cab066639ab2156412eee7f5f774b41a2a136369f817ef7\"\n      }\n    },\n    {\n      \"path\": \"/message/transcriptHash\",\n      \"typeMatches\": true,\n      \"bytesMatch\": true,\n      \"expected\": {\n        \"type\": \"bytes32\",\n        \"value\": \"0x941c08f97e2d22a8189d2f4a6802bbb283d610ae6527a9f1a323ae6751f996c1\"\n      },\n      \"actual\": {\n        \"type\": \"bytes32\",\n        \"value\": \"0x941c08f97e2d22a8189d2f4a6802bbb283d610ae6527a9f1a323ae6751f996c1\"\n      }\n    }\n  ],\n  \"byteExpectationsMatch\": true,\n  \"digestMatchesExpected\": true,\n  \"checksPass\": true\n}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "-B",
+        "line-4/tools/bytes-review/bytes_review.py",
+        "line-4/tools/bytes-review/zto-substitution.json",
+        "--bytes-expect",
+        "line-4/tools/bytes-review/zto-bytes.json",
+        "--digest-expect",
+        "0xf33e2506e5c103f98dbfe3feb6d4b87d55f1fad4e423dbaa8462465ff4ab9774"
+      ],
+      "expectedExit": 1,
+      "actualExit": 1,
+      "stdout": "{\n  \"reviewVersion\": 1,\n  \"primaryType\": \"PaymentEvidence\",\n  \"typeEncoding\": \"PaymentEvidence(bytes32 transactionHash,address token,address recipient,uint256 minimumRaw,uint256 confirmations,bool requireFinalized,bytes32 transcriptHash)\",\n  \"domainSeparator\": \"0xb841b9b4b38823bdf4340d649cbad52a49cb75b55ddd1f91b457246dcb4f807d\",\n  \"messageHash\": \"0x9484871782b69adff9c26a4a2e11a480fdadf7e82fef8e53d656088eabd2f1d5\",\n  \"digest\": \"0x67e42a8938c56bc6c574e4e4ee709d0587fdebdaed52c33d6980f41793c76316\",\n  \"fields\": [\n    {\n      \"path\": \"/message/transactionHash\",\n      \"type\": \"bytes32\",\n      \"value\": \"0xc4ca304c305cae326cab066639ab2156412eee7f5f774b41a2a136369f817ef8\",\n      \"inputBytes\": 32,\n      \"encoding\": \"right_zero_pad\",\n      \"paddingBytes\": 0,\n      \"word\": \"0xc4ca304c305cae326cab066639ab2156412eee7f5f774b41a2a136369f817ef8\",\n      \"zeroByteOffsets\": [],\n      \"empty\": false\n    },\n    {\n      \"path\": \"/message/transcriptHash\",\n      \"type\": \"bytes32\",\n      \"value\": \"0x941c08f97e2d22a8189d2f4a6802bbb283d610ae6527a9f1a323ae6751f996c1\",\n      \"inputBytes\": 32,\n      \"encoding\": \"right_zero_pad\",\n      \"paddingBytes\": 0,\n      \"word\": \"0x941c08f97e2d22a8189d2f4a6802bbb283d610ae6527a9f1a323ae6751f996c1\",\n      \"zeroByteOffsets\": [],\n      \"empty\": false\n    }\n  ],\n  \"byteFieldCount\": 2,\n  \"expectationsProvided\": true,\n  \"digestExpectationProvided\": true,\n  \"interpretation\": \"Exact bytes and declared types are compared, never padded, trimmed or repaired in the input. Matching byte fields does not pin non-byte values or the whole schema. A matching digest is not signing approval, ownership or contract support.\",\n  \"unpinnedPaths\": [],\n  \"absentPaths\": [],\n  \"checks\": [\n    {\n      \"path\": \"/message/transactionHash\",\n      \"typeMatches\": true,\n      \"bytesMatch\": false,\n      \"expected\": {\n        \"type\": \"bytes32\",\n        \"value\": \"0xc4ca304c305cae326cab066639ab2156412eee7f5f774b41a2a136369f817ef7\"\n      },\n      \"actual\": {\n        \"type\": \"bytes32\",\n        \"value\": \"0xc4ca304c305cae326cab066639ab2156412eee7f5f774b41a2a136369f817ef8\"\n      }\n    },\n    {\n      \"path\": \"/message/transcriptHash\",\n      \"typeMatches\": true,\n      \"bytesMatch\": true,\n      \"expected\": {\n        \"type\": \"bytes32\",\n        \"value\": \"0x941c08f97e2d22a8189d2f4a6802bbb283d610ae6527a9f1a323ae6751f996c1\"\n      },\n      \"actual\": {\n        \"type\": \"bytes32\",\n        \"value\": \"0x941c08f97e2d22a8189d2f4a6802bbb283d610ae6527a9f1a323ae6751f996c1\"\n      }\n    }\n  ],\n  \"byteExpectationsMatch\": false,\n  \"digestMatchesExpected\": false,\n  \"checksPass\": false\n}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "line-4/tools/bytes-review",
+        "-v"
+      ],
+      "expectedExit": 0,
+      "actualExit": 0,
+      "stdout": "",
+      "stderr": "test_absent_path (test_bytes_review.ByteReviewTests.test_absent_path) ... ok\ntest_all_fixed_widths (test_bytes_review.ByteReviewTests.test_all_fixed_widths) ... ok\ntest_bad_hex_and_fixed_width (test_bytes_review.ByteReviewTests.test_bad_hex_and_fixed_width) ... ok\ntest_byte_substitution (test_bytes_review.ByteReviewTests.test_byte_substitution) ... ok\ntest_cli_codes_and_null_policy (test_bytes_review.ByteReviewTests.test_cli_codes_and_null_policy) ... ok\ntest_complete_coverage_required (test_bytes_review.ByteReviewTests.test_complete_coverage_required) ... ok\ntest_digest_expectation (test_bytes_review.ByteReviewTests.test_digest_expectation) ... ok\ntest_domain_and_nested_arrays (test_bytes_review.ByteReviewTests.test_domain_and_nested_arrays) ... ok\ntest_dynamic_hashes_contents (test_bytes_review.ByteReviewTests.test_dynamic_hashes_contents) ... ok\ntest_empty_array_has_no_byte_values (test_bytes_review.ByteReviewTests.test_empty_array_has_no_byte_values) ... ok\ntest_empty_dynamic_known_vector (test_bytes_review.ByteReviewTests.test_empty_dynamic_known_vector) ... ok\ntest_exact_match_and_case (test_bytes_review.ByteReviewTests.test_exact_match_and_case) ... ok\ntest_fixed_right_padding (test_bytes_review.ByteReviewTests.test_fixed_right_padding) ... ok\ntest_inspection_has_no_acceptance (test_bytes_review.ByteReviewTests.test_inspection_has_no_acceptance) ... ok\ntest_invalid_policies (test_bytes_review.ByteReviewTests.test_invalid_policies) ... ok\ntest_no_mutation (test_bytes_review.ByteReviewTests.test_no_mutation) ... ok\ntest_non_byte_values_still_validate (test_bytes_review.ByteReviewTests.test_non_byte_values_still_validate) ... ok\ntest_report_bound (test_bytes_review.ByteReviewTests.test_report_bound) ... ok\ntest_type_substitution_even_same_word (test_bytes_review.ByteReviewTests.test_type_substitution_even_same_word) ... ok\ntest_zero_is_not_empty (test_bytes_review.ByteReviewTests.test_zero_is_not_empty) ... ok\ntest_zto_historical_digest_and_byte_expectations (test_bytes_review.ByteReviewTests.test_zto_historical_digest_and_byte_expectations) ... ok\n\n----------------------------------------------------------------------\nRan 21 tests in 0.226s\n\nOK\n"
+    },
+    {
+      "command": [
+        "python3",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "test/scratch/line4-round32/bytes-review",
+        "-v"
+      ],
+      "expectedExit": 0,
+      "actualExit": 0,
+      "stdout": "",
+      "stderr": "test_absent_path (test_bytes_review.ByteReviewTests.test_absent_path) ... ok\ntest_all_fixed_widths (test_bytes_review.ByteReviewTests.test_all_fixed_widths) ... ok\ntest_bad_hex_and_fixed_width (test_bytes_review.ByteReviewTests.test_bad_hex_and_fixed_width) ... ok\ntest_byte_substitution (test_bytes_review.ByteReviewTests.test_byte_substitution) ... ok\ntest_cli_codes_and_null_policy (test_bytes_review.ByteReviewTests.test_cli_codes_and_null_policy) ... ok\ntest_complete_coverage_required (test_bytes_review.ByteReviewTests.test_complete_coverage_required) ... ok\ntest_digest_expectation (test_bytes_review.ByteReviewTests.test_digest_expectation) ... ok\ntest_domain_and_nested_arrays (test_bytes_review.ByteReviewTests.test_domain_and_nested_arrays) ... ok\ntest_dynamic_hashes_contents (test_bytes_review.ByteReviewTests.test_dynamic_hashes_contents) ... ok\ntest_empty_array_has_no_byte_values (test_bytes_review.ByteReviewTests.test_empty_array_has_no_byte_values) ... ok\ntest_empty_dynamic_known_vector (test_bytes_review.ByteReviewTests.test_empty_dynamic_known_vector) ... ok\ntest_exact_match_and_case (test_bytes_review.ByteReviewTests.test_exact_match_and_case) ... ok\ntest_fixed_right_padding (test_bytes_review.ByteReviewTests.test_fixed_right_padding) ... ok\ntest_inspection_has_no_acceptance (test_bytes_review.ByteReviewTests.test_inspection_has_no_acceptance) ... ok\ntest_invalid_policies (test_bytes_review.ByteReviewTests.test_invalid_policies) ... ok\ntest_no_mutation (test_bytes_review.ByteReviewTests.test_no_mutation) ... ok\ntest_non_byte_values_still_validate (test_bytes_review.ByteReviewTests.test_non_byte_values_still_validate) ... ok\ntest_report_bound (test_bytes_review.ByteReviewTests.test_report_bound) ... ok\ntest_type_substitution_even_same_word (test_bytes_review.ByteReviewTests.test_type_substitution_even_same_word) ... ok\ntest_zero_is_not_empty (test_bytes_review.ByteReviewTests.test_zero_is_not_empty) ... ok\ntest_zto_historical_digest_and_byte_expectations (test_bytes_review.ByteReviewTests.test_zto_historical_digest_and_byte_expectations) ... ok\n\n----------------------------------------------------------------------\nRan 21 tests in 0.219s\n\nOK\n"
+    },
+    {
+      "command": [
+        "python3",
+        "-B",
+        "test/scratch/line4-round32/bytes-review/bytes_review.py",
+        "test/scratch/line4-round32/bytes-review/zto-payment.json",
+        "--bytes-expect",
+        "test/scratch/line4-round32/bytes-review/zto-bytes.json"
+      ],
+      "expectedExit": 0,
+      "actualExit": 0,
+      "stdout": "{\n  \"reviewVersion\": 1,\n  \"primaryType\": \"PaymentEvidence\",\n  \"typeEncoding\": \"PaymentEvidence(bytes32 transactionHash,address token,address recipient,uint256 minimumRaw,uint256 confirmations,bool requireFinalized,bytes32 transcriptHash)\",\n  \"domainSeparator\": \"0xb841b9b4b38823bdf4340d649cbad52a49cb75b55ddd1f91b457246dcb4f807d\",\n  \"messageHash\": \"0xac6db73f194d768dad814f953bcc998a7338581d687e8a9107ca85ed94077599\",\n  \"digest\": \"0xf33e2506e5c103f98dbfe3feb6d4b87d55f1fad4e423dbaa8462465ff4ab9774\",\n  \"fields\": [\n    {\n      \"path\": \"/message/transactionHash\",\n      \"type\": \"bytes32\",\n      \"value\": \"0xc4ca304c305cae326cab066639ab2156412eee7f5f774b41a2a136369f817ef7\",\n      \"inputBytes\": 32,\n      \"encoding\": \"right_zero_pad\",\n      \"paddingBytes\": 0,\n      \"word\": \"0xc4ca304c305cae326cab066639ab2156412eee7f5f774b41a2a136369f817ef7\",\n      \"zeroByteOffsets\": [],\n      \"empty\": false\n    },\n    {\n      \"path\": \"/message/transcriptHash\",\n      \"type\": \"bytes32\",\n      \"value\": \"0x941c08f97e2d22a8189d2f4a6802bbb283d610ae6527a9f1a323ae6751f996c1\",\n      \"inputBytes\": 32,\n      \"encoding\": \"right_zero_pad\",\n      \"paddingBytes\": 0,\n      \"word\": \"0x941c08f97e2d22a8189d2f4a6802bbb283d610ae6527a9f1a323ae6751f996c1\",\n      \"zeroByteOffsets\": [],\n      \"empty\": false\n    }\n  ],\n  \"byteFieldCount\": 2,\n  \"expectationsProvided\": true,\n  \"digestExpectationProvided\": false,\n  \"interpretation\": \"Exact bytes and declared types are compared, never padded, trimmed or repaired in the input. Matching byte fields does not pin non-byte values or the whole schema. A matching digest is not signing approval, ownership or contract support.\",\n  \"unpinnedPaths\": [],\n  \"absentPaths\": [],\n  \"checks\": [\n    {\n      \"path\": \"/message/transactionHash\",\n      \"typeMatches\": true,\n      \"bytesMatch\": true,\n      \"expected\": {\n        \"type\": \"bytes32\",\n        \"value\": \"0xc4ca304c305cae326cab066639ab2156412eee7f5f774b41a2a136369f817ef7\"\n      },\n      \"actual\": {\n        \"type\": \"bytes32\",\n        \"value\": \"0xc4ca304c305cae326cab066639ab2156412eee7f5f774b41a2a136369f817ef7\"\n      }\n    },\n    {\n      \"path\": \"/message/transcriptHash\",\n      \"typeMatches\": true,\n      \"bytesMatch\": true,\n      \"expected\": {\n        \"type\": \"bytes32\",\n        \"value\": \"0x941c08f97e2d22a8189d2f4a6802bbb283d610ae6527a9f1a323ae6751f996c1\"\n      },\n      \"actual\": {\n        \"type\": \"bytes32\",\n        \"value\": \"0x941c08f97e2d22a8189d2f4a6802bbb283d610ae6527a9f1a323ae6751f996c1\"\n      }\n    }\n  ],\n  \"byteExpectationsMatch\": true,\n  \"checksPass\": true\n}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "test/scratch/line4-round32/typed-digest",
+        "-v"
+      ],
+      "expectedExit": 0,
+      "actualExit": 0,
+      "stdout": "",
+      "stderr": "test_bad_unicode_and_bad_json (test_bounded_input.BoundedInputTests.test_bad_unicode_and_bad_json) ... ok\ntest_brackets_and_escaped_quotes_in_strings_do_not_count (test_bounded_input.BoundedInputTests.test_brackets_and_escaped_quotes_in_strings_do_not_count) ... ok\ntest_byte_limit_at_boundary (test_bounded_input.BoundedInputTests.test_byte_limit_at_boundary) ... ok\ntest_cli_match_and_mismatch (test_bounded_input.BoundedInputTests.test_cli_match_and_mismatch) ... ok\ntest_cli_rejection_no_traceback_or_success_output (test_bounded_input.BoundedInputTests.test_cli_rejection_no_traceback_or_success_output) ... ok\ntest_cyclic_api_values_and_nonstring_keys_rejected (test_bounded_input.BoundedInputTests.test_cyclic_api_values_and_nonstring_keys_rejected) ... ok\ntest_depth_scanned_before_decoder (test_bounded_input.BoundedInputTests.test_depth_scanned_before_decoder) ... ok\ntest_duplicate_keys_at_any_depth (test_bounded_input.BoundedInputTests.test_duplicate_keys_at_any_depth) ... ok\ntest_example_unchanged_and_absolute_path_supported (test_bounded_input.BoundedInputTests.test_example_unchanged_and_absolute_path_supported) ... ok\ntest_fifo_refused_without_blocking (test_bounded_input.BoundedInputTests.test_fifo_refused_without_blocking) ... ok\ntest_file_and_directory_symlinks_rejected (test_bounded_input.BoundedInputTests.test_file_and_directory_symlinks_rejected) ... ok\ntest_hidden_paths_rejected (test_bounded_input.BoundedInputTests.test_hidden_paths_rejected) ... ok\ntest_node_and_api_text_bounds (test_bounded_input.BoundedInputTests.test_node_and_api_text_bounds) ... ok\ntest_nonfinite_float_and_exponent_rejected (test_bounded_input.BoundedInputTests.test_nonfinite_float_and_exponent_rejected) ... ok\ntest_outside_and_parent_paths_rejected_without_opening (test_bounded_input.BoundedInputTests.test_outside_and_parent_paths_rejected_without_opening) ... ok\ntest_oversize_file_rejected_before_read (test_bounded_input.BoundedInputTests.test_oversize_file_rejected_before_read) ... ok\ntest_bytes_address_boolean_encoding (test_bounded_input.EncodingBoundaryTests.test_bytes_address_boolean_encoding) ... ok\ntest_empty_dynamic_and_nested_fixed_arrays (test_bounded_input.EncodingBoundaryTests.test_empty_dynamic_and_nested_fixed_arrays) ... ok\ntest_encoder_owns_schema_snapshot_when_caching (test_bounded_input.EncodingBoundaryTests.test_encoder_owns_schema_snapshot_when_caching) ... ok\ntest_invalid_types_and_deep_array_types_rejected (test_bounded_input.EncodingBoundaryTests.test_invalid_types_and_deep_array_types_rejected) ... ok\ntest_recursive_type_with_finite_values (test_bounded_input.EncodingBoundaryTests.test_recursive_type_with_finite_values) ... ok\ntest_signed_and_unsigned_limits_and_sign_extension (test_bounded_input.EncodingBoundaryTests.test_signed_and_unsigned_limits_and_sign_extension) ... ok\ntest_type_field_order_changes_digest (test_bounded_input.EncodingBoundaryTests.test_type_field_order_changes_digest) ... ok\ntest_types_and_fields_bounded (test_bounded_input.EncodingBoundaryTests.test_types_and_fields_bounded) ... ok\ntest_dependency_order_and_arrays (test_typed_digest.DigestTests.test_dependency_order_and_arrays) ... ok\ntest_ether_mail_vector (test_typed_digest.DigestTests.test_ether_mail_vector) ... ok\ntest_keccak_vectors (test_typed_digest.DigestTests.test_keccak_vectors) ... ok\ntest_rejects_ambiguous_or_invalid_values (test_typed_digest.DigestTests.test_rejects_ambiguous_or_invalid_values) ... ok\n\n----------------------------------------------------------------------\nRan 28 tests in 0.413s\n\nOK\n"
+    },
+    {
+      "command": [
+        "python3",
+        "-B",
+        "line-4/tools/bytes-review/bytes_review.py",
+        "line-4/tools/bytes-review/zto-payment.json",
+        "--bytes-expect",
+        "test/scratch/line4-round32/null.json"
+      ],
+      "expectedExit": 2,
+      "actualExit": 2,
+      "stdout": "",
+      "stderr": "bytes-review: \"expectations require exactly a fields object\"\n"
+    },
+    {
+      "command": [
+        "python3",
+        "-B",
+        "line-4/tools/bytes-review/bytes_review.py",
+        "line-4/tools/bytes-review/zto-payment.json",
+        "--bytes-expect",
+        "test/scratch/line4-round32/duplicate.json"
+      ],
+      "expectedExit": 2,
+      "actualExit": 2,
+      "stdout": "",
+      "stderr": "bytes-review: \"duplicate JSON key 'fields'\"\n"
+    },
+    {
+      "command": [
+        "python3",
+        "-B",
+        "line-4/tools/bytes-review/bytes_review.py",
+        "line-4/tools/bytes-review/zto-payment.json",
+        "--bytes-expect",
+        "test/scratch/line4-round32/link.json"
+      ],
+      "expectedExit": 2,
+      "actualExit": 2,
+      "stdout": "",
+      "stderr": "bytes-review: \"[Errno 40] Too many levels of symbolic links: 'link.json'\"\n"
+    },
+    {
+      "command": [
+        "python3",
+        "-B",
+        "line-4/tools/bytes-review/bytes_review.py",
+        "../outside.json"
+      ],
+      "expectedExit": 2,
+      "actualExit": 2,
+      "stdout": "",
+      "stderr": "bytes-review: \"hidden paths and parent traversal are not accepted\"\n"
+    }
+  ]
+}

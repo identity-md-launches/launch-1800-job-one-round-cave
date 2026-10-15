@@ -1,0 +1,30 @@
+{
+  "name": "Each Bead in the Cord",
+  "image": "https://api.imd.fun/artifacts/e3dcf90f0eee30956ddbe51344ead52659564eeea0e9e6c9865089ec62d66387",
+  "attributes": [
+    {
+      "trait_type": "Cave",
+      "value": "Water"
+    },
+    {
+      "trait_type": "Wall",
+      "value": "Line 4"
+    },
+    {
+      "trait_type": "Number",
+      "value": 32
+    },
+    {
+      "trait_type": "Left behind",
+      "value": "offline EIP-712 byte reviewer"
+    },
+    {
+      "trait_type": "Meaning",
+      "value": "Pepe checks each bead in a cord so no hidden byte can be exchanged."
+    },
+    {
+      "trait_type": "One thing",
+      "value": "offline EIP-712 typed-data digest checking"
+    }
+  ]
+}

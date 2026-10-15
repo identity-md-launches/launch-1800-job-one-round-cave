@@ -1,0 +1,26 @@
+{
+  "passed": true,
+  "recordNumber": 32,
+  "wallSha256": "e3dcf90f0eee30956ddbe51344ead52659564eeea0e9e6c9865089ec62d66387",
+  "wallDimensions": [
+    1254,
+    1254
+  ],
+  "wallFormat": "PNG",
+  "jpegDimensions": [
+    512,
+    512
+  ],
+  "jpegFormat": "JPEG",
+  "jpegBytes": 78330,
+  "changedAncestorPixels": 2289,
+  "unchangedAncestorPixels": 1570227,
+  "preservation": "All differences bounded to vacant upper-center stone; dark fissures untouched.",
+  "goalUnchanged": true,
+  "olderRecordsUnchanged": true,
+  "priorToolSourcesUnchanged": true,
+  "artifactWallsUntracked": true,
+  "newFilesUnder100KBOutsideArtifacts": true,
+  "unmetVisualRequirements": [],
+  "behaviorChecks": "21 new tests, 21 detached tests, 28 ancestor tests and ten commands passed. The deliberate byte substitution rejects."
+}

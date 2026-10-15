@@ -1,0 +1,69 @@
+{
+  "reviewVersion": 1,
+  "primaryType": "PaymentEvidence",
+  "typeEncoding": "PaymentEvidence(bytes32 transactionHash,address token,address recipient,uint256 minimumRaw,uint256 confirmations,bool requireFinalized,bytes32 transcriptHash)",
+  "domainSeparator": "0xb841b9b4b38823bdf4340d649cbad52a49cb75b55ddd1f91b457246dcb4f807d",
+  "messageHash": "0xac6db73f194d768dad814f953bcc998a7338581d687e8a9107ca85ed94077599",
+  "digest": "0xf33e2506e5c103f98dbfe3feb6d4b87d55f1fad4e423dbaa8462465ff4ab9774",
+  "fields": [
+    {
+      "path": "/message/transactionHash",
+      "type": "bytes32",
+      "value": "0xc4ca304c305cae326cab066639ab2156412eee7f5f774b41a2a136369f817ef7",
+      "inputBytes": 32,
+      "encoding": "right_zero_pad",
+      "paddingBytes": 0,
+      "word": "0xc4ca304c305cae326cab066639ab2156412eee7f5f774b41a2a136369f817ef7",
+      "zeroByteOffsets": [],
+      "empty": false
+    },
+    {
+      "path": "/message/transcriptHash",
+      "type": "bytes32",
+      "value": "0x941c08f97e2d22a8189d2f4a6802bbb283d610ae6527a9f1a323ae6751f996c1",
+      "inputBytes": 32,
+      "encoding": "right_zero_pad",
+      "paddingBytes": 0,
+      "word": "0x941c08f97e2d22a8189d2f4a6802bbb283d610ae6527a9f1a323ae6751f996c1",
+      "zeroByteOffsets": [],
+      "empty": false
+    }
+  ],
+  "byteFieldCount": 2,
+  "expectationsProvided": true,
+  "digestExpectationProvided": true,
+  "interpretation": "Exact bytes and declared types are compared, never padded, trimmed or repaired in the input. Matching byte fields does not pin non-byte values or the whole schema. A matching digest is not signing approval, ownership or contract support.",
+  "unpinnedPaths": [],
+  "absentPaths": [],
+  "checks": [
+    {
+      "path": "/message/transactionHash",
+      "typeMatches": true,
+      "bytesMatch": true,
+      "expected": {
+        "type": "bytes32",
+        "value": "0xc4ca304c305cae326cab066639ab2156412eee7f5f774b41a2a136369f817ef7"
+      },
+      "actual": {
+        "type": "bytes32",
+        "value": "0xc4ca304c305cae326cab066639ab2156412eee7f5f774b41a2a136369f817ef7"
+      }
+    },
+    {
+      "path": "/message/transcriptHash",
+      "typeMatches": true,
+      "bytesMatch": true,
+      "expected": {
+        "type": "bytes32",
+        "value": "0x941c08f97e2d22a8189d2f4a6802bbb283d610ae6527a9f1a323ae6751f996c1"
+      },
+      "actual": {
+        "type": "bytes32",
+        "value": "0x941c08f97e2d22a8189d2f4a6802bbb283d610ae6527a9f1a323ae6751f996c1"
+      }
+    }
+  ],
+  "byteExpectationsMatch": true,
+  "digestMatchesExpected": true,
+  "checksPass": true
+}

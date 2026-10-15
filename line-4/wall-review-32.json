@@ -1,0 +1,42 @@
+{
+  "wall": {
+    "paths": [
+      "artifacts/line-4/wall.png",
+      "artifacts/line-4/wall-v12.png"
+    ],
+    "width": 1254,
+    "height": 1254,
+    "format": "PNG",
+    "mode": "RGB",
+    "bytes": 3911005,
+    "sha256": "e3dcf90f0eee30956ddbe51344ead52659564eeea0e9e6c9865089ec62d66387"
+  },
+  "preview": {
+    "path": "dist/line-4/32.jpg",
+    "width": 512,
+    "height": 512,
+    "format": "JPEG",
+    "bytes": 78330,
+    "sha256": "cfc25fa8550aacce7b4e25ac846b20b8f73e17279702e76fd80934a68b342620"
+  },
+  "ancestorSha256": "53b0a3335c33b807890bd95ac044dabb202979ce1d48dce213e735b5f0da959d",
+  "generatedDraftSha256": "c8ea715075efee56171c20fd608876b6afbf2af9f1e3bac5d61da0379f52df1b",
+  "imageTool": "Built-in imagegen, generation 01a13d23-a53f-7dc3-b03b-07e7247fbd95",
+  "prompt": "Preserve the inherited square cave and every painting. Add a tiny worn charcoal cord threading three red-ochre beads, one with a chalk center, on vacant upper-center stone. No letters, numbers, hands or new figures.",
+  "changedPixels": 2289,
+  "unchangedPixels": 1570227,
+  "additionBoundsExclusive": [
+    509,
+    145,
+    679,
+    215
+  ],
+  "preservation": "All pixels outside the new vacant-stone pigment and all deep fissure pixels inside are identical to the hash-verified ancestor. Main Pepe, hands, older paintings, water and framing are untouched.",
+  "visualReview": "Inspected finished PNG and decoded JPEG: wide-mouthed, heavy-lidded Pepe; each unchanged hand has four fingers and one thumb. No new hand, text, number, caption, logo, watermark, border or prohibited symbol observed. Warm stone, cracks, torchlight, framing, water and all older paintings retained. No known unmet mandatory visual requirement.",
+  "unmetVisualRequirements": [],
+  "limitations": [
+    "Local observation is not independent visual certification.",
+    "The small worn motif is subtle at thumbnail scale.",
+    "The full generated draft changed surrounding texture; only its isolated new pigment was retained."
+  ]
+}
