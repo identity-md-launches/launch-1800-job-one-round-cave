@@ -1,0 +1,24 @@
+{
+  "commands": [
+    {
+      "command": "python3 -B -m unittest discover -s line-3/tools/pinned-position -p 'test_*.py' -v",
+      "exitCode": 0,
+      "testsPassed": 18
+    },
+    {
+      "command": "python3 -B -m unittest discover -s line-3/tools/tx-position -p 'test_*.py' -v",
+      "exitCode": 0,
+      "testsPassed": 17
+    },
+    {
+      "command": "python3 -B line-3/tools/pinned-position/pinned.py --demo",
+      "exitCode": 0,
+      "state": "pinned_position_and_settlement_match"
+    }
+  ],
+  "totalTestsPassed": 35,
+  "networkRequired": false,
+  "evidence": "unchanged saved real ZTO provider transcript; historical replay only",
+  "repairDuringDevelopment": "Fixed a missing pair of parentheses around the multiline demoNote before the successful test run.",
+  "authority": "Local observations, not independent certification"
+}

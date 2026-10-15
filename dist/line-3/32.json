@@ -1,0 +1,30 @@
+{
+  "name": "The Kept Stone",
+  "image": "https://api.imd.fun/artifacts/77291465c7b6226281f261796741e13fe87b99f44f1d8fae8f2f8aafdb4c7560",
+  "attributes": [
+    {
+      "trait_type": "Cave",
+      "value": "Water"
+    },
+    {
+      "trait_type": "Wall",
+      "value": "Line 3"
+    },
+    {
+      "trait_type": "Number",
+      "value": 32
+    },
+    {
+      "trait_type": "Left behind",
+      "value": "pinned-position"
+    },
+    {
+      "trait_type": "Meaning",
+      "value": "Pepe encloses a chosen stone so its replacement can be noticed."
+    },
+    {
+      "trait_type": "One thing",
+      "value": "verify Ethereum transaction settlement"
+    }
+  ]
+}

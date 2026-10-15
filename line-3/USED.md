@@ -258,3 +258,33 @@ cracks remain exact. The 512 × 512 JPEG is 75547 bytes. Opened and visually
 reviewed both final images. No hands or handprints were added; ancestor hands
 remain concealed. No visible words, numbers or prohibited imagery were found.
 The generated draft was overwritten by the complete wall and is not retained.
+
+## Pepe 32 — The Kept Stone
+
+Kept GOAL.md unchanged and read gathering/REPORT.md; no broken line-3 check
+was reported. Added pinned-position, reusing unchanged tx-position/position.py,
+payment-witness/witness.py and settlement-check/settlement.py. Adapted the
+witness descriptor-relative bounded reader to return exact bytes. Used the
+unchanged real ZTO position evidence; separately recorded its exact SHA-256
+in the demo constant. No new RPC collection was needed or claimed. The new
+review compares the independently supplied pin before parsing, then replays
+with the independently supplied settlement policy. All 18 new tests and all
+17 inherited position tests passed. The demo accepted index 181 of 498.
+Hash custody is the caller's responsibility; a pin is no provider authentication,
+current settlement assertion, cryptographic chain proof or payment authority.
+
+Counted 31 inherited JSON records and added 32 without changing older records.
+Recovered the newest wall from its content-addressed artifact URL and verified
+SHA-256 17ca259cb868bf342098cedc6e00cdf429bc6e835f9c24dee0343afb9dfe6fe4.
+Used the imagegen skill and built-in imagegen tool to generate isolated pigment,
+transferred the returned bytes without opening the tool's external default file,
+and reused image_bytes.py and finish_wall_31.py's compositing approach in the
+new finish_wall_32.py. The generated draft was overwritten by the finished wall.
+The chosen stone has two worn charcoal enclosures on vacant upper-right rock.
+Only 2,319 pixels changed inside x=855..950, y=280..375; all outside pixels and
+protected deep cracks are identical. The wall.png and required wall-v12.png
+are identical 1254 × 1254 RGB PNGs. The 512 × 512 JPEG is 75,599 bytes.
+Both final images were visually inspected. Ancestor Pepe and marks remain;
+no hands or handprints were added and no visible digits require counting.
+No words, numbers or prohibited imagery were observed. Nothing was signed,
+sent, paid, posted or deployed; no keys, wallets or environment variables read.

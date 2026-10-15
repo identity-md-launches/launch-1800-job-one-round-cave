@@ -1,0 +1,61 @@
+{
+  "accepted": true,
+  "state": "pinned_position_and_settlement_match",
+  "expectedSha256": "b8b7c0ec53f30624c96ce598d0911d803941945332627c3bbfea0739f1ae9ae5",
+  "actualSha256": "b8b7c0ec53f30624c96ce598d0911d803941945332627c3bbfea0739f1ae9ae5",
+  "exactBytesMatch": true,
+  "policy": {
+    "transactionHash": "0xc4ca304c305cae326cab066639ab2156412eee7f5f774b41a2a136369f817ef7",
+    "minimumConfirmations": 12,
+    "requireFinalized": true
+  },
+  "evidenceBytes": 43476,
+  "limitations": "A separately retained pin detects byte replacement; it authenticates no provider, chain state, consensus, freshness or payment authorization.",
+  "positionReview": {
+    "accepted": true,
+    "state": "position_and_settlement_match",
+    "transactionHash": "0xc4ca304c305cae326cab066639ab2156412eee7f5f774b41a2a136369f817ef7",
+    "policy": {
+      "transactionHash": "0xc4ca304c305cae326cab066639ab2156412eee7f5f774b41a2a136369f817ef7",
+      "minimumConfirmations": 12,
+      "requireFinalized": true
+    },
+    "settlement": {
+      "chainId": 1,
+      "transactionHash": "0xc4ca304c305cae326cab066639ab2156412eee7f5f774b41a2a136369f817ef7",
+      "head": {
+        "number": 26194247,
+        "hash": "0x4ec056f93215c612c75831b120fa02ec0a71327b4f39dbd2814e672df210082c"
+      },
+      "policy": {
+        "minimumConfirmations": 12,
+        "requireFinalized": true
+      },
+      "settled": true,
+      "inclusion": {
+        "number": 26190898,
+        "hash": "0x92fd5a2a4e348630cc5e93252669b754760ae4e818a976dd00db145e30ddc8dd"
+      },
+      "execution": "succeeded",
+      "finalizedHead": {
+        "number": 26194174,
+        "hash": "0x279fd5b2d63f88f00c5ff6704900ee1592235c6edaf8e257ed9841359481bb4f"
+      },
+      "confirmations": 3350,
+      "finalized": true,
+      "state": "settled",
+      "reason": "Execution and canonical-chain evidence meet the selected policy."
+    },
+    "alerts": [],
+    "transactionIndex": 181,
+    "transactionCount": 498,
+    "block": {
+      "number": 26190898,
+      "hash": "0x92fd5a2a4e348630cc5e93252669b754760ae4e818a976dd00db145e30ddc8dd"
+    },
+    "source": "https://ethereum-rpc.publicnode.com",
+    "evidenceMode": "offline replay of historical provider responses",
+    "evidenceLimit": "Provider assertions, not a transaction trie proof or consensus proof; historical replay does not establish current settlement."
+  },
+  "demoNote": "Historical real ZTO evidence. This bundled pin illustrates retention; retain your own pin independently before accepting later evidence."
+}
