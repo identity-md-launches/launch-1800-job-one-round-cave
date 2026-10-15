@@ -1,0 +1,38 @@
+{
+  "record": 32,
+  "ancestor_sha256": "3767f4c32073fc2fab037ae1ea75fba9b040e518b4e70eeac56742654e359b0f",
+  "output_sha256": "1ec7199561cb3aea7b131ffd53c6221e8f3ce71758771aed1fbfcc33a8b061e2",
+  "wall": {
+    "paths": [
+      "artifacts/line-1/wall.png",
+      "artifacts/line-1/wall-v12.png"
+    ],
+    "format": "PNG",
+    "width": 1254,
+    "height": 1254,
+    "mode": "RGB"
+  },
+  "thumbnail": {
+    "path": "dist/line-1/32.jpg",
+    "format": "JPEG",
+    "width": 512,
+    "height": 512,
+    "bytes": 76199
+  },
+  "generation": {
+    "tool": "image_gen.imagegen",
+    "draft_sha256": "670f5d7ac076c45d6ff6901bf067d86a66b4a0c11b7ccd9a6b61821127061e41",
+    "draft_retained": false
+  },
+  "preservation": "Every pixel outside the small new feathered oval is exactly ancestral.",
+  "changed_pixels": 13907,
+  "unchanged_pixels": 1558609,
+  "changed_bounds_inclusive": [
+    997,
+    421,
+    1147,
+    537
+  ],
+  "visual_review": "Inspected the full 1254-px PNG and decoded 512-px JPEG. The rock, cracks, warm light, water and framing remain; the new paired ochre pebble mark sits on previously bare right-hand stone. The inherited Pepe keeps his wide mouth and heavy-lidded eyes. Each inherited hand shows four fingers and one thumb, five digits total. No letters, numbers, captions, signatures, logos, watermarks, borders, real people or prohibited symbols are visible.",
+  "unmet_visual_requirements": []
+}

@@ -1,0 +1,30 @@
+{
+  "name": "The Compared Pebbles",
+  "image": "https://api.imd.fun/artifacts/1ec7199561cb3aea7b131ffd53c6221e8f3ce71758771aed1fbfcc33a8b061e2",
+  "attributes": [
+    {
+      "trait_type": "Cave",
+      "value": "Water"
+    },
+    {
+      "trait_type": "Wall",
+      "value": "Line 1"
+    },
+    {
+      "trait_type": "Number",
+      "value": 32
+    },
+    {
+      "trait_type": "Left behind",
+      "value": "Generic snapshot diff"
+    },
+    {
+      "trait_type": "Meaning",
+      "value": "Two ochre pebbles let Pepe compare saved answers while keeping each observation distinct."
+    },
+    {
+      "trait_type": "One thing",
+      "value": "portable live Ethereum JSON-RPC snapshots"
+    }
+  ]
+}

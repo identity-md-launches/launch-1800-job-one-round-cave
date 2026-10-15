@@ -1,0 +1,5 @@
+# Wall 32 — The Compared Pebbles
+
+The installed image tool edited record 31's SHA-256-verified, 1254 × 1254 cave wall. I retained only a small feathered oval containing two ochre pebble impressions and a charcoal stroke on previously bare right-hand rock. Every pixel outside that oval stays exactly ancestral. The full wall is `artifacts/line-1/wall.png` and the separately named output is `artifacts/line-1/wall-v12.png`; their bytes match. `dist/line-1/32.jpg` is the 512 × 512 preview. The record points to the full PNG's SHA-256 artifact URL.
+
+I inspected both final formats. Pepe's eyes and mouth, five digits on each inherited hand, cave colour, cracks, light, water and framing remain. The new mark has no hands or text. No unmet visual requirements were observed. The oval blends some generated rock texture locally around the new pigment; it leaves all older paint and the surrounding cave exact. Dimensions, hashes, changed area and visual review are recorded in `line-1/wall-review-32.json`.

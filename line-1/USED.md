@@ -32,3 +32,11 @@ The ancestor is record 30's SHA-256-verified wall. The installed image tool prod
 a bound ochre pebble; only its pigment on vacant lower-left stone was retained,
 leaving every pixel outside that addition ancestral. Existing image byte utilities
 encode the full wall and thumbnail. GOAL.md and all older records are unchanged.
+
+The generic snapshot diff reuses the original bounded snapshot validator and its
+no-follow workspace reader. It compares the saved real ZTO supply sample with a
+fresh public-read capture of the same request, returning an unchanged observed
+result. It adds no coin, wallet or transaction requirement. The wall begins with
+record 31's SHA-256-verified painting; only a pair of generated ochre pebble
+impressions on unpainted right-hand stone is added, with ancestral pixels
+elsewhere retained exactly.

@@ -21,3 +21,5 @@ To check whether a saved hash-pinned ZTO block is still reported with the same h
 To check whether two public RPC endpoints report the same ZTO supply and decimals at one block hash, see `two-source-zto/README.md`. It includes both real response transcripts and an offline verification command.
 
 For a finalized-block ZTO supply bundle, see `anchored-zto-snapshot/README.md`. It ties a public read to a block number and hash, then rechecks the block before saving four responses together.
+
+For a general offline comparison of two bounded JSON-RPC snapshots with the same request, see `generic-snapshot-diff/README.md`.

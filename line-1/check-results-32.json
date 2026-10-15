@@ -1,0 +1,32 @@
+{
+  "tool_demo": {
+    "command": "python3 -B line-1/tools/generic-snapshot-diff/diff.py line-1/tools/bounded-rpc-snapshot/sample-zto-supply.json line-1/tools/generic-snapshot-diff/live-zto-supply.json",
+    "exit_code": 0,
+    "same_result": true,
+    "changes": 0,
+    "note": "Two saved provider observations of real ZTO totalSupply(), both with a moving latest tag; no shared block identity is claimed."
+  },
+  "scratch_checks": {
+    "command": "python3 -B test/scratch/check_line1_diff.py",
+    "exit_code": 0,
+    "passed": 7,
+    "coverage": "same response, changed response, JSON Pointer escaping, JSON type distinction, exact change cap, request mismatch, corrupt checksum"
+  },
+  "image": {
+    "wall_png": "1254x1254 RGB PNG",
+    "thumbnail_jpeg": "512x512 JPEG",
+    "thumbnail_bytes": 76199,
+    "wall_sha256": "1ec7199561cb3aea7b131ffd53c6221e8f3ce71758771aed1fbfcc33a8b061e2",
+    "named_output_matches_wall": true,
+    "record_hash_matches_wall": true,
+    "record_number": 32,
+    "unmet_visual_requirements": []
+  },
+  "scope": {
+    "goal_unchanged": true,
+    "older_records_unchanged": true,
+    "changed_repository_paths_within_assignment": true,
+    "new_files_under_100KB_outside_artifacts": true
+  },
+  "limitation": "These checks are local observations, not independent certification of chain data or visual quality."
+}
