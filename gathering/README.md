@@ -1,36 +1,37 @@
-# Water gathering 11 — The Smallest Flake
+# Water gathering 12 — The Matching Notches
 
-The four-line review is in `REPORT.md`; `COINS.md` says none and explains why.
-The shared addition is [exact payment precision review](../shared/payment-evidence/README.md#gathering-11-exact-payment-precision-review),
-which binds historical ZTO payment evidence and an independently expected domain,
-type and digest while exposing unsafe JSON integers and binary64 precision loss.
-All dependencies are ordinary Python standard-library source files.
+`REPORT.md` covers all four lines and their limits; `COINS.md` says none and why.
+The shared addition is [independent payment byte review](../shared/payment-evidence/README.md#gathering-12-independent-payment-byte-review):
+complete byte-field expectations joined to historical payment, domain, digest
+and integer-precision gates, using real retained ZTO evidence. Standard-library
+Python only; the shared folder works without line folders or network access.
 
-Run from the repository root:
+From the repository root:
 
 ```sh
 python3 -B gathering/run_checks.py
-python3 -B gathering/check_round_11.py
+python3 -B gathering/check_round_12.py
 python3 -B gathering/build_gallery.py
 python3 -B gathering/check_delivery.py
 ```
 
-The first command runs 104 offline commands and 745 tests. The second checks the
-new bridge, a detached copy, expected rejections and a saved fresh public ZTO
-observation. It runs no network calls. The 16 new bridge tests pass both here and
-in the detached copy. Logs use the `check-11-` prefix and `round-checks-11.json`.
-The gallery rebuild consumes every numbered record and all four unchanged goals.
+The runner passed 112 commands and 820 unittest cases. The supplementary runner
+checks the new bridge, a detached copy, expected rejections and offline replay of
+a fresh saved ZTO observation. Its nine trials pass; the 16 new integration tests
+pass both here and detached. Logs use `check-12-` and `round-checks-12.json`.
+The delivery checker verifies actual bytes, records, gallery and unchanged lines.
 
-`artifacts/gathering/wall-v11.png` and alias `wall.png` are **1254 × 1254 RGB PNG**.
-`dist/gathering/11.jpg` is a **512 × 512 JPEG**, below 100 KB. The installed image
-edit tool generated a small Pepe above a balance holding a pebble and tiny flake;
-only its charcoal was transferred to vacant upper stone. All pixels outside that
-addition and protected deep cracks remain ancestral. The full PNG and JPEG were
-visually inspected. No known unmet visual requirements; no hands or handprints
-were added. No text or numbers appear on the wall. Prompt, hashes, dimensions,
-formats and preservation results are in `wall-review-11.json`.
+The finished gathering wall is `artifacts/gathering/wall-v12.png`, with `wall.png`
+as an identical alias: **1254 × 1254 RGB PNG**. Its record is
+`dist/gathering/12.json`, with a **512 × 512 JPEG** beside it, below 100 KB.
+The built-in image tool generated two notched stones; only new charcoal pigment
+was transferred into vacant upper-right shadow. All pixels outside that patch
+and protected deep cracks remain ancestral. Full PNG and decoded JPEG were
+visually inspected; the new mark is deliberately subtle. No known unmet visual
+requirements. No new hands/handprints, letters or numerals. The final prompt,
+formats, sizes, hashes and preservation are in `wall-review-12.json`.
 
-The new numbered record is `dist/gathering/11.json`. This is a later gathering;
-existing future placeholders remain intact. The final gallery has 55 paintings
-and 90 pending slots across all five walls. The required PNG remains untracked
-for separate artifact upload. All line-folder bytes remain unchanged.
+This later gathering preserves all future placeholders and all line records.
+The rebuilt gallery contains 60 paintings and 89 placeholders across five walls.
+All line-folder bytes remain unchanged. Named PNG output remains untracked for
+the uploader; no dependency installation or network is needed for offline checks.

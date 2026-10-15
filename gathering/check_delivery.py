@@ -82,8 +82,8 @@ def jpeg_info(path):
 
 
 def main():
-    number = 11
-    wall = ROOT / "artifacts/gathering/wall-v11.png"
+    number = 12
+    wall = ROOT / "artifacts/gathering/wall-v12.png"
     preview = ROOT / f"dist/gathering/{number:02}.jpg"
     png, jpeg = png_info(wall), jpeg_info(preview)
     assert wall.read_bytes() == (ROOT / 'artifacts/gathering/wall.png').read_bytes()
@@ -141,7 +141,7 @@ def main():
                  for p in (ROOT / folder).rglob("*") if p.is_file() and p.stat().st_size > 100_000]
     assert not oversized, oversized
     assert not list((ROOT / "dist").rglob("__pycache__"))
-    baseline = dict(json.loads((ROOT / 'gathering/line-source-hashes-11.json').read_text()))
+    baseline = dict(json.loads((ROOT / 'gathering/line-source-hashes-12.json').read_text()))
     actual = {str(p.relative_to(ROOT)): hashlib.sha256(p.read_bytes()).hexdigest()
               for n in range(1, 5) for p in (ROOT / f'line-{n}').rglob('*') if p.is_file()}
     assert actual == baseline, 'line folders changed'
@@ -152,7 +152,7 @@ def main():
         assert hashlib.sha256(copied.read_bytes()).hexdigest() == entry['copiedSha256']
         if entry['adaptation'] == 'none; byte-for-byte source copy':
             assert source.read_bytes() == copied.read_bytes()
-    review = json.loads((ROOT / 'gathering/wall-review-11.json').read_text())
+    review = json.loads((ROOT / 'gathering/wall-review-12.json').read_text())
     assert review['wallSha256'] == hashlib.sha256(wall.read_bytes()).hexdigest()
     assert review['changedPixels'] + review['unchangedPixels'] == png['width'] * png['height']
     assert review['unmetVisualRequirements'] == []

@@ -1,0 +1,164 @@
+{
+  "accepted": true,
+  "state": "payment_and_byte_review_match",
+  "alerts": [],
+  "paymentReview": {
+    "accepted": true,
+    "state": "exact_payment_review_matches",
+    "alerts": [],
+    "paymentAccepted": true,
+    "clientMatchesPaymentCommitment": true,
+    "domainAndPrimaryTypeMatch": true,
+    "paymentMatchesExpectedDigest": true,
+    "paymentCommitment": "0x41d9999db383e39c78be45661d68307592ad1b8da2fcace128efcfa5e4e29d2c",
+    "integerReview": {
+      "reviewVersion": 1,
+      "primaryType": "PaymentEvidence",
+      "typeEncoding": "PaymentEvidence(bytes32 transactionHash,address token,address recipient,uint256 minimumRaw,uint256 confirmations,bool requireFinalized,bytes32 transcriptHash)",
+      "domainSeparator": "0xb841b9b4b38823bdf4340d649cbad52a49cb75b55ddd1f91b457246dcb4f807d",
+      "messageHash": "0xf770b87ef4056d6cb901367668082b8425381e59a66a2890b7d0c1384b8e0822",
+      "digest": "0x41d9999db383e39c78be45661d68307592ad1b8da2fcace128efcfa5e4e29d2c",
+      "integers": [
+        {
+          "path": "/domain/chainId",
+          "type": "uint256",
+          "widthBits": 256,
+          "signed": false,
+          "inputForm": "json_integer",
+          "parsedValue": "1",
+          "exactDecimal": "1",
+          "minimumDecimal": "0",
+          "maximumDecimal": "115792089237316195423570985008687907853269984665640564039457584007913129639935",
+          "word": "0x0000000000000000000000000000000000000000000000000000000000000001",
+          "requiresExactIntegerHandling": false,
+          "unsafeJsonNumber": false,
+          "binary64Coercion": {
+            "nearestIntegerDecimal": "1",
+            "deltaDecimal": "0",
+            "changesValue": false,
+            "outsideDeclaredRange": false
+          }
+        },
+        {
+          "path": "/message/minimumRaw",
+          "type": "uint256",
+          "widthBits": 256,
+          "signed": false,
+          "inputForm": "decimal_string",
+          "parsedValue": "166357571280020680094504",
+          "exactDecimal": "166357571280020680094504",
+          "minimumDecimal": "0",
+          "maximumDecimal": "115792089237316195423570985008687907853269984665640564039457584007913129639935",
+          "word": "0x00000000000000000000000000000000000000000000233a43130efdb61e3328",
+          "requiresExactIntegerHandling": true,
+          "unsafeJsonNumber": false,
+          "binary64Coercion": {
+            "nearestIntegerDecimal": "166357571280020678115328",
+            "deltaDecimal": "-1979176",
+            "changesValue": true,
+            "outsideDeclaredRange": false
+          }
+        },
+        {
+          "path": "/message/confirmations",
+          "type": "uint256",
+          "widthBits": 256,
+          "signed": false,
+          "inputForm": "json_integer",
+          "parsedValue": "12",
+          "exactDecimal": "12",
+          "minimumDecimal": "0",
+          "maximumDecimal": "115792089237316195423570985008687907853269984665640564039457584007913129639935",
+          "word": "0x000000000000000000000000000000000000000000000000000000000000000c",
+          "requiresExactIntegerHandling": false,
+          "unsafeJsonNumber": false,
+          "binary64Coercion": {
+            "nearestIntegerDecimal": "12",
+            "deltaDecimal": "0",
+            "changesValue": false,
+            "outsideDeclaredRange": false
+          }
+        }
+      ],
+      "integerCount": 3,
+      "requiresExactIntegerHandling": true,
+      "hasUnsafeJsonNumbers": false,
+      "binary64CoercionChangesValue": true,
+      "interpretation": "Original exact integers determine the digest. Binary64 values are hypothetical nearest-even conversions, never substituted. Strings preserve input values but later Number coercion may lose precision. No units, token decimals or business meaning are inferred. No numeric cues does not mean approval.",
+      "matchesExpected": true
+    },
+    "providerAuthenticated": false,
+    "evidenceMode": "offline historical RPC observations",
+    "limits": "Historical provider assertions, not current settlement or a state proof. Caller policy, domain, type and digest must be independently chosen. Exact strings can still lose precision if later coerced to Number. A matching review authorizes no signature, token permit or payment."
+  },
+  "byteReview": {
+    "reviewVersion": 1,
+    "primaryType": "PaymentEvidence",
+    "typeEncoding": "PaymentEvidence(bytes32 transactionHash,address token,address recipient,uint256 minimumRaw,uint256 confirmations,bool requireFinalized,bytes32 transcriptHash)",
+    "domainSeparator": "0xb841b9b4b38823bdf4340d649cbad52a49cb75b55ddd1f91b457246dcb4f807d",
+    "messageHash": "0xf770b87ef4056d6cb901367668082b8425381e59a66a2890b7d0c1384b8e0822",
+    "digest": "0x41d9999db383e39c78be45661d68307592ad1b8da2fcace128efcfa5e4e29d2c",
+    "fields": [
+      {
+        "path": "/message/transactionHash",
+        "type": "bytes32",
+        "value": "0xc4ca304c305cae326cab066639ab2156412eee7f5f774b41a2a136369f817ef7",
+        "inputBytes": 32,
+        "encoding": "right_zero_pad",
+        "paddingBytes": 0,
+        "word": "0xc4ca304c305cae326cab066639ab2156412eee7f5f774b41a2a136369f817ef7",
+        "zeroByteOffsets": [],
+        "empty": false
+      },
+      {
+        "path": "/message/transcriptHash",
+        "type": "bytes32",
+        "value": "0x7a1b57c2854e42f5dafe9ed3a5df75046b7e121468cafe8abef7f938453ad9af",
+        "inputBytes": 32,
+        "encoding": "right_zero_pad",
+        "paddingBytes": 0,
+        "word": "0x7a1b57c2854e42f5dafe9ed3a5df75046b7e121468cafe8abef7f938453ad9af",
+        "zeroByteOffsets": [],
+        "empty": false
+      }
+    ],
+    "byteFieldCount": 2,
+    "expectationsProvided": true,
+    "digestExpectationProvided": true,
+    "interpretation": "Exact bytes and declared types are compared, never padded, trimmed or repaired in the input. Matching byte fields does not pin non-byte values or the whole schema. A matching digest is not signing approval, ownership or contract support.",
+    "unpinnedPaths": [],
+    "absentPaths": [],
+    "checks": [
+      {
+        "path": "/message/transactionHash",
+        "typeMatches": true,
+        "bytesMatch": true,
+        "expected": {
+          "type": "bytes32",
+          "value": "0xc4ca304c305cae326cab066639ab2156412eee7f5f774b41a2a136369f817ef7"
+        },
+        "actual": {
+          "type": "bytes32",
+          "value": "0xc4ca304c305cae326cab066639ab2156412eee7f5f774b41a2a136369f817ef7"
+        }
+      },
+      {
+        "path": "/message/transcriptHash",
+        "typeMatches": true,
+        "bytesMatch": true,
+        "expected": {
+          "type": "bytes32",
+          "value": "0x7a1b57c2854e42f5dafe9ed3a5df75046b7e121468cafe8abef7f938453ad9af"
+        },
+        "actual": {
+          "type": "bytes32",
+          "value": "0x7a1b57c2854e42f5dafe9ed3a5df75046b7e121468cafe8abef7f938453ad9af"
+        }
+      }
+    ],
+    "byteExpectationsMatch": true,
+    "digestMatchesExpected": true,
+    "checksPass": true
+  },
+  "authorization": "Historical evidence review only; no signing or payment authorization."
+}

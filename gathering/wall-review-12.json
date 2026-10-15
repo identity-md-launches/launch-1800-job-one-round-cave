@@ -1,0 +1,43 @@
+{
+  "ancestorSha256": "9be1dbc4499c9e33636e17edc35f3de515a59c8ae0054d7a9d5de6e0088fc27e",
+  "ancestorSize": [
+    1254,
+    1254
+  ],
+  "wallSize": [
+    1254,
+    1254
+  ],
+  "wallFormat": "PNG",
+  "wallMode": "RGB",
+  "wallSha256": "36097c8d1198329e1d360f931465d79100cc350f311d3b178dda2cd3ac11dc86",
+  "generatedDraftSha256": "cac395e56c1c9f19f8be352aac04720dcc283d49b6d8b59ca0c79d7995ddc6ec",
+  "generatedDraftRetained": false,
+  "sourceRectangle": [
+    950,
+    390,
+    1085,
+    468
+  ],
+  "additionRectangle": [
+    1025,
+    340,
+    120,
+    70
+  ],
+  "changedPixels": 613,
+  "unchangedPixels": 1571903,
+  "allPixelsOutsideAdditionUnchanged": true,
+  "deepCracksProtected": true,
+  "previewSize": [
+    512,
+    512
+  ],
+  "previewFormat": "JPEG",
+  "previewBytes": 75938,
+  "imageTool": "image_gen.imagegen",
+  "prompt": "Preserve the complete 1254 square ancestral cave, rock, framing and every older mark. Add only two small worn charcoal and yellow-ochre notched pebbles side by side on empty upper-right stone, representing exact byte comparison. Preserve the central broad-mouth heavy-lidded Pepe. No new hands, handprints, text, numbers, logos or borders.",
+  "reviewStatus": "visually inspected full PNG and decoded JPEG",
+  "unmetVisualRequirements": [],
+  "visualNotes": "Two small notched-stone charcoal outlines sit in upper-right shadow; deliberately subtle and partly worn. Central Pepe and all older marks remain pixel-identical. No new hands or handprints; no digits to count. No text or numerals observed."
+}

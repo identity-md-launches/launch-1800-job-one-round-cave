@@ -148,6 +148,16 @@ def main():
         ['-m', 'unittest', 'discover', '-s', 'line-4/tools/integer-review', '-v'],
         ['shared/payment-evidence/test_anchored_payment.py'],
     ])
+    commands.extend([
+        ['line-1/tools/generic-snapshot-diff/diff.py', 'line-1/tools/bounded-rpc-snapshot/sample-zto-supply.json', 'line-1/tools/generic-snapshot-diff/live-zto-supply.json'],
+        ['line-2/tools/source-context/show.py', 'shared/payment-evidence/policy.contract.json', 'shared/payment-evidence/example.policy.json'],
+        ['line-2/tools/source-context/test_show.py'],
+        ['line-3/tools/pinned-position/pinned.py', '--demo'],
+        ['-m', 'unittest', 'discover', '-s', 'line-3/tools/pinned-position', '-v'],
+        ['line-4/tools/bytes-review/bytes_review.py', 'line-4/tools/bytes-review/zto-payment.json', '--bytes-expect', 'line-4/tools/bytes-review/zto-bytes.json', '--digest-expect', '0xf33e2506e5c103f98dbfe3feb6d4b87d55f1fad4e423dbaa8462465ff4ab9774'],
+        ['-m', 'unittest', 'discover', '-s', 'line-4/tools/bytes-review', '-v'],
+        ['shared/payment-evidence/test_precision_payment.py'],
+    ])
     results = []
     for args in commands:
         command = [sys.executable, '-B', *args]
@@ -159,7 +169,7 @@ def main():
         print('PASS' if result.returncode == 0 else 'FAIL', ' '.join(args), flush=True)
     for group in ['line-1', 'line-2', 'line-3', 'line-4', 'shared']:
         selected = [r for r in results if group in r['command'] or (group == 'line-4' and any(x in r['command'] for x in ('test/scratch/typed-digest', 'test/scratch/review-changes'))) or (group == 'line-3' and 'gathering/offline_boundary.py' in r['command'])]
-        (ROOT / ('gathering/check-11-' + group + '.json')).write_text(json.dumps(selected, separators=(',', ':'))+'\n')
+        (ROOT / ('gathering/check-12-' + group + '.json')).write_text(json.dumps(selected, separators=(',', ':'))+'\n')
     return 0 if all(r['exitCode'] == 0 for r in results) else 1
 
 

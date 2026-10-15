@@ -663,3 +663,68 @@ They cover exact real ZTO replay, equal-digest numeric rejection, one-unit/round
 amount changes, independent digest/domain/type/verifier checks, payment shortfall,
 policy substitution, hex-string equivalence, immutability, disabled network,
 JavaScript-safe report integers, output bounds, strict inputs and CLI outcomes.
+
+## Gathering 12: independent payment byte review
+
+`byte_payment.py` adds Line 4's complete byte-field expectations to the existing
+payment and precision gates. It replays historical ZTO evidence against a separate
+policy, binds the full client commitment to the independently expected domain,
+primary type and digest, rejects unsafe JSON integer literals, and compares every
+reachable byte field to separately retained exact type/value expectations.
+
+One command from the repository root, offline with Python's standard library:
+
+```sh
+python3 -B shared/payment-evidence/byte_payment.py shared/payment-evidence/example.transcript.json shared/payment-evidence/example.policy.json shared/payment-evidence/example.typed-data.json --chain-id 1 --name 'Read-only Payment Evidence' --version 1 --primary-type PaymentEvidence --no-verifier --expect-digest 0x41d9999db383e39c78be45661d68307592ad1b8da2fcace128efcfa5e4e29d2c --expect-bytes shared/payment-evidence/example.bytes-expectations.json
+```
+
+Tried: exit **0**, `payment_and_byte_review_match`, two matched `bytes32`
+fields: transaction hash and transcript hash. `example.byte-payment.json` retains
+the result. The bundled expectations reproduce the existing shared fixture;
+they demonstrate execution, not independent custody, approval or a fresh payment.
+For real review retain your expectations independently before taking the client
+request. Incoming data cannot choose a file, fill a missing expectation, lower
+policy, or generate a new accepted digest. Every argument is required except
+optional domain salt; absence of a verifying contract is explicitly selected.
+
+An expectation is `{"fields": {"/message/transactionHash": {"type": "bytes32",
+"value": "the complete independently retained transaction hash"}, ...}}`.
+The quoted description is not an executable hash; use the complete real value.
+All reachable byte fields must be supplied. Missing/extra paths or wrong bytes
+or types reject. Hex case may differ; bytes are never padded or repaired in input.
+JSON null is invalid and cannot disable the gate. Values other than bytes remain
+covered by the full commitment and precision checks. The transaction hash is an
+Ethereum hash; `transcriptHash` is SHA-256 of canonical transcript JSON, **not**
+the exact file-byte hash and not an Ethereum proof.
+
+Replacing only `--expect-bytes` with `line-4/tools/bytes-review/zto-bytes.json`
+returns exit **1**, despite the shared payment replay passing. That Line 4
+example commits to a different historical transcript. This rejection is saved
+as `example.byte-payment-rejection.json`; nothing rewrites expectations to agree.
+
+Exit **0** means every gate passed, **1** means a review mismatch, and **2** means
+invalid input or exceeded bounds with no partial successful report. Inputs use
+the existing strict no-follow reader: regular files beneath cwd, no symlinks,
+hidden/traversing paths, duplicate keys, floats or nonfinite numbers, at most
+65,536 bytes. The complete ASCII report including newline is capped at 100,000
+bytes. POSIX descriptor support is required. Size limits are not a CPU sandbox.
+
+```sh
+python3 -B shared/payment-evidence/test_byte_payment.py
+```
+
+All **16 integration tests pass**, including source/client substitutions, byte
+coverage, null expectations, missing digest, non-byte changes, unsafe integer
+forms, independent domain and policy, payment shortfall with a matching request,
+case equivalence, immutability, disabled network transport, report bound and CLI
+exits. They and the demo also pass in a detached copy without any line folders.
+The unchanged byte reviewer and its source SHA-256 are listed in `provenance.json`;
+its encoder is byte-identical to the encoder already vendored here.
+
+Copy the whole `payment-evidence` folder for use in another workspace. No package,
+installation or network is required. Historical provider assertions remain
+unauthenticated, not current settlement, a receipt/state proof, token ownership
+or signing/payment authorization. This command does not add freshness, paired
+provider or ancestry policy; the existing separate tools retain those functions.
+No input is modified and no wallet, key, secret, environment or signing transport
+is accessed. ZTO and IMD already serve the evidence; no new coin is needed.

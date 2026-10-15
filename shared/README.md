@@ -70,3 +70,9 @@ Line 4's integer analysis joined to the historical ZTO payment/domain gates.
 The unchanged integer reviewer is vendored as an ordinary source file; the whole
 payment-evidence folder remains portable and works offline. Matching EIP-712
 encoding alone cannot hide an unsafe JSON integer representation from this review.
+
+Gathering 12 adds [independent payment byte review](payment-evidence/README.md#gathering-12-independent-payment-byte-review):
+Line 4's exact byte-field expectations now join the historical payment, domain,
+full digest and integer-precision gates. Two byte fields must match separately
+retained expectations; partial coverage or null expectations reject. The complete
+folder is portable offline, with an unchanged vendor copy and 16 integration tests.

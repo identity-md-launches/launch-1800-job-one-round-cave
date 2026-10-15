@@ -173,5 +173,12 @@
     "sha256": "babe3b772514dbc47666f42a50d18678c4168aa910588e8eb1bf4b744c81c1ea",
     "copiedSha256": "babe3b772514dbc47666f42a50d18678c4168aa910588e8eb1bf4b744c81c1ea",
     "adaptation": "none; byte-for-byte source copy"
+  },
+  {
+    "source": "line-4/tools/bytes-review/bytes_review.py",
+    "copy": "vendor/bytes_review.py",
+    "sha256": "614c7da5b74886cb5b26d5af70f6531a708f621fba8198ac3d394ce78bafcdb5",
+    "copiedSha256": "614c7da5b74886cb5b26d5af70f6531a708f621fba8198ac3d394ce78bafcdb5",
+    "adaptation": "none; byte-for-byte source copy"
   }
 ]
